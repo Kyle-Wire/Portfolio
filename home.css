@@ -4,44 +4,63 @@
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
 }
-
+nav.navbar{
+    padding-bottom: 20px;
+    padding-top: 10px; 
+    display: flex;
+    justify-content: space-between;
+  
+}
+.nav-item{
+    padding-right: 1.2rem;
+    padding-left: .3rem;
+    
+}
 a{
     text-decoration: none;
+    color: black;
 }
-
+a.nav-item:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+ul.right{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .8rem;
+}
+ul.left{
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 1.2rem;
+    font-weight: 700;
+}
 li{
-    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5rem;
 }
-
-.nav{
-    background-color: rgba(255, 255 , 255, 0.5);
-    backdrop-filter: saturate(180%) blur(20px);
+li.number{
+    color: #F20683;
+}
+div.about-me-container{
     display: flex;
-}
-
-nav.h3{
     justify-content: center;
+    align-content: center;
+    padding-top: 5rem;
 }
-
-.navigation-items{
-    display: flex;
-}
-
-#Headshot{
-    width: 10%;
-    border-radius: 50%;
-}
-
-
-
-
 
 
 
 /* (A) FIXED WRAPPER */
 .hwrap {
     overflow: hidden; /* HIDE SCROLL BAR */
-    background: #eee;
+    background: #F20683;
+    border-bottom: solid 1px black;
+    color: white;
+    font-size: 1rem;
   }
    
   /* (B) MOVING TICKER WRAPPER */
@@ -60,9 +79,9 @@ nav.h3{
   /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
   @keyframes tickerh {
     0% { transform: translate3d(100%, 0, 0); }
-    100% { transform: translate3d(-200%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
   }
-  .hmove { animation: tickerh linear 15s infinite; }
+  .hmove { animation: tickerh linear 25s infinite; }
   .hmove:hover { animation-play-state: paused; }
 
  
